@@ -1,18 +1,13 @@
 <template>
     <v-app>
-
-    
         <side-bar></side-bar>
-
         <v-main>
             <div class="pa-3">
                 <router-view></router-view>
                 <vue-progress-bar></vue-progress-bar>
             </div>
         </v-main>
-
         <page-footer></page-footer>
-
     </v-app>
 </template>
 
@@ -33,20 +28,16 @@ export default {
 
     created(){
 
-         // Set Auth and Role data in Store
-        if(this.authuser){
-            this.$store.commit('setAuth', JSON.parse(this.authuser) )
-        }
-        if(this.authuser){
-            this.$store.commit('setRoles', JSON.parse(this.permission) )
-        }
+        // Set Auth and Role data in Store
+        // this.$store.commit('setAuth', JSON.parse(this.authuser) )
+        // this.$store.commit('setRoles', JSON.parse(this.permission) )
 
         this.$Progress.start();
 
         //checkUserRole
-      
-        console.log('Admin Index');
-        
+        //console.log('Super Admin Index, auth user', JSON.parse(this.authuser));
+        //console.log('Role: ', this.isAdministrator(), this.isAnyRole(['Administrator', 'Ivca']), this.isRole('Administrator') )
+
         this.$Progress.finish();  
     }
     

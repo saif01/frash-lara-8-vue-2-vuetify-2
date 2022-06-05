@@ -31,7 +31,7 @@ const router = new VueRouter({
             component: er404,
             name: 'er404',
             meta:{
-                title: 'Admin 404',
+                title: 'Super Admin 404',
             },   
         },
 

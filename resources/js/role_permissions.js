@@ -127,6 +127,9 @@ export default{
     isHardwareDamaged(){
         return this.checkAnyRoleOfArray(['Administrator', 'Damaged']);
     },
+    isHardwareDelivery(){
+        return this.checkAnyRoleOfArray(['Administrator', 'Delivery']);
+    },
 
 
     // Inventory
@@ -156,6 +159,11 @@ export default{
     // Network
     isNetwork(){
         return this.checkAnyRoleOfArray(['Administrator', 'Network-monitor']);
+    },
+
+    // iAccess
+    isIaccessAdmin(){
+        return this.checkAnyRoleOfArray(['Administrator', 'iAccess-admin']);
     },
 
 

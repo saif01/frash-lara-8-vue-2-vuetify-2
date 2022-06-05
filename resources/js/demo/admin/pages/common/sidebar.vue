@@ -12,12 +12,11 @@
             </v-btn>
 
 
-            <v-menu bottom left>
+            <!-- <v-menu bottom left>
                 <template v-slot:activator="{ on, attrs }">
                     <span v-if="auth" class="m-1">{{ auth.name }}</span>
-                    <span v-else class="m-1">Demo</span>
                     <v-avatar v-bind="attrs" v-on="on" contain>
-                        <img v-if="auth" :src="'/images/users/small/'+auth.image" alt="image">
+                        <img v-if="auth.image" :src="'/images/users/small/'+auth.image" alt="image">
                         <img v-else src="https://www.w3schools.com/howto/img_avatar.png" alt="image">
                     </v-avatar>
                 </template>
@@ -27,7 +26,7 @@
                         <v-list-item-title>Logout</v-list-item-title>
                     </v-list-item>
                 </v-list>
-            </v-menu>
+            </v-menu> -->
         </v-app-bar>
 
 
@@ -53,7 +52,16 @@
                     </v-list-item-content>
                 </v-list-item>
 
-            
+
+                <!-- <v-list-item link router :to="{name: 'ReportIndex'}">
+                    <v-list-item-icon>
+                        <v-icon>mdi-chart-bar</v-icon>
+                    </v-list-item-icon>
+
+                    <v-list-item-content>
+                        <v-list-item-title>Report</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item> -->
 
                 <v-list-item link router href="/logout">
                     <v-list-item-icon>

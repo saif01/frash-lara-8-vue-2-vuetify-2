@@ -10,6 +10,8 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "@mdi/font": "^6.6.96",
+        "@mdi/js": "^6.5.95",
         "@popperjs/core": "^2.10.2",
         "axios": "^0.21.4",
         "bootstrap": "^5.1.3",
@@ -24,15 +26,20 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "@fontsource/roboto": "^4.5.5",
+        "autoprefixer": "10.4.5",
+        "chart.js": "^2.7.1",
         "laravel-vue-pagination": "^2.3.1",
         "vform": "^2.1.2",
         "vue-chartjs": "^3.4.0",
         "vue-moment": "^4.1.0",
+        "vue-pdf-app": "^2.1.0",
         "vue-progressbar": "^0.7.5",
         "vue-router": "^3.5.3",
         "vue-sweetalert2": "^5.0.2",
-        "vue2-editor": "^2.10.3",
+        "vue2-editor": "^1.0.1",
         "vuetify": "^2.6.2",
         "vuex": "^3.6.2"
     }
 }
+ 

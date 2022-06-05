@@ -46,14 +46,8 @@ export default {
     created(){
 
         // Set Auth and Role data in Store
-        if(this.authuser){
-            this.$store.commit('setAuth', JSON.parse(this.authuser) )
-        }
-        if(this.authuser){
-            this.$store.commit('setRoles', JSON.parse(this.permission) )
-        }
-        
-        
+        // this.$store.commit('setAuth', JSON.parse(this.authuser) )
+        // this.$store.commit('setRoles', JSON.parse(this.permission) )
 
         this.$Progress.start();
 
